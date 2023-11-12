@@ -80,7 +80,7 @@
                 echo "<option value=\"$country\""; if ($selectedCountry == $country) { echo "selected=\"selected\""; } echo ">$country</option>";
             }
         } catch (Exception $ex) {
-            echo $ex->getMessage();
+            echo "<p>There was an error listing the countries.</p>";
         }
     }
     
@@ -93,7 +93,7 @@
                 echo "<div><input type=\"checkbox\" id=\"$tag\" value=\"$tag\" name=\"tags[]\" $checked /> <label for=\"$tag\">$tag</label></div>";
             }
         } catch (Exception $ex) {
-            echo $ex->getMessage();
+            echo "<p>There was an error listing the tags.</p>";
         }
     }
     
@@ -268,7 +268,6 @@
             
             return true;
         } catch (Exception $ex) {
-            echo $ex->getMessage();
             return false;
         }
     }
@@ -297,7 +296,6 @@
             
             return true;
         } catch (Exception $ex) {
-            echo $ex->getMessage();
             return false;
         }
     }

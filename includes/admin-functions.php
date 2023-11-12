@@ -40,7 +40,6 @@
                 return false;
             }
         } catch (Exception $ex) {
-            echo $ex->getMessage();
             return false;
         }
     }
@@ -64,7 +63,6 @@
                 return false;
             }
         } catch (Exception $ex) {
-            echo $ex->getMessage();
             return false;
         }
     }
